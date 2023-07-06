@@ -14,8 +14,8 @@ table {
 <table border="1">
 	<form method="post" action="/" th:object="${formModel}">
 		<tr>
-			<td><label id="name1">名前</label></td>
-			<td><input type="text" id="name1" name="name" th:value="${name}" /></td>
+			<td><label>名前</label></td>
+			<td><input type="text"  name="name" th:field="*{sName}"/></td>
 		</tr>
 		<tr>
 			<td></td>
